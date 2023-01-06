@@ -1,0 +1,33 @@
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Inter', Verdana, sans-serif;
+  background-color:  #EDF2EC;;
+}
+
+h2 {
+  font-family: 'Inika', serif;
+}
+
+.page {
+  width: 1440px;
+  margin: auto;
+}
+.wrapper {
+  width: 1220px;
+  margin: auto;
+}
+
+.layout-2-column {
+  display: flex;
+  justify-content: space-between;
+}
+.service__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
