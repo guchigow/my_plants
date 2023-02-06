@@ -1,7 +1,7 @@
 %hamburger-line {
   display: inline-block;
-  content: '';
-  background:  $color-text;
+  content: "";
+  background: $color-text;
   height: 2px;
   width: 100%;
   position: absolute;
@@ -9,6 +9,8 @@
 
 .hamburger {
   display: none;
+  background: transparent;
+  border: none;
   position: relative;
   z-index: 2;
   top: -3px;
@@ -44,7 +46,7 @@
 }
 
 .header.open {
-  .hamburger__line{
+  .hamburger__line {
     transform: rotate(-45deg);
     top: 50%;
     opacity: 0;
