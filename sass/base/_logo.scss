@@ -1,0 +1,12 @@
+.logo {
+  margin-bottom: 3px;
+}
+
+.logo-svg:hover {
+  .logo-path {
+    fill: $color-additional;
+    @extend %transition;
+  }
+  cursor: pointer;
+  opacity: 0.8;
+}

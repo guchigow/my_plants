@@ -1,0 +1,43 @@
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  @extend %font-main;
+}
+
+h1 {
+  color: $color-text;
+  @include font($size: 4.5rem, $height: 5rem, $weight:700);
+  @include media-desktop {
+    font-size: 3.5rem;
+  }
+}
+
+h2 {
+  @extend %font-add;
+  @include font($size: 4rem, $height: 5.2rem, $weight:400);
+  color: $color-additional;
+  margin: 0;
+  @include media-desktop {
+    @include font($size: 3.5rem, $height: 4.6rem, $weight:400);
+  }
+  @include media-mobile {
+    @include font($size: 2.5rem, $height: 3.3rem, $weight: 400);
+  }
+}
+
+h3 {
+  @include font($size: 2rem, $weight:700);
+  color: $color-primary;
+}
+
+.text-colored-add {
+  color: $color-additional;
+}
+.text-colored-main {
+  color: $color-primary;
+}

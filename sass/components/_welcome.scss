@@ -1,0 +1,77 @@
+.welcome {
+  background: $color-background;
+}
+
+.welcome__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 45px;
+  padding-bottom: 57px;
+  @include media-desktop {
+    padding-top: 1px;
+    padding-bottom: 70px;
+  }
+  @include media-mobile {
+    padding-top: 4px;
+    padding-bottom: 22px;
+  }
+}
+
+.welcome__heading {
+  margin: 0 0 44px 0;
+  max-width: 549px;
+  @include media-desktop {
+    max-width: 341px;
+    margin-bottom: 31px;
+    margin-left: 1px;
+  }
+  @include media-mobile {
+    @include font($size: 2.5rem, $height: 3.5rem, $weight:700);
+    margin-bottom: 20px;
+  }
+}
+
+.welcome__content {
+  padding-top: 36px;
+  margin-right: 1px;
+  order: 2;
+  @include media-desktop {
+    order: 1;
+    padding-top: 12px;
+  }
+}
+
+.welcome-leafs-img {
+  width: 100%;
+}
+
+.welcome__image {
+  order: 1;
+  max-width: 449px;
+  @include media-desktop {
+    order: 2;
+    max-width: 280px;
+    padding-top: 10px;
+  }
+  @include media-mobile {
+    display: none;
+  }
+}
+
+.welcome__description {
+  @include font($size: 2rem, $height: 3.5rem, $weight:400);
+  color: $color-text-p;
+  max-width: 525px;
+  margin: 0 0 46px 0;
+  @include media-desktop {
+    max-width: 341px;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    margin-bottom: 34px;
+    padding-left: 6px;
+  }
+  @include media-mobile {
+    padding-left: 0;
+    margin-bottom: 25px;
+  }
+}

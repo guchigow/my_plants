@@ -1,0 +1,138 @@
+.accordion {
+  width: 332px;
+  min-height: 282px;
+  padding: 34px 41px;
+  border: 1px solid $color-border;
+  border-radius: 20px;
+  margin: auto;
+  @extend %transition;
+  @include media-mobile {
+    width: 224px;
+    min-height: 235px;
+    padding: 29px 22px;
+  }
+}
+.accordion__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 32px;
+  height: 100%;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  @include media-mobile {
+    gap: 13px;
+  }
+}
+.accordion__li {
+  min-height: 50px;
+  width: 250px;
+  background: $color-background;
+  border-radius: 20px;
+  @extend %transition;
+  &:hover {
+    background: #d6e7d2;
+  }
+  @include media-mobile {
+    width: 180px;
+  }
+}
+
+.accordion__li-head {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 50px;
+  padding: 0 40px;
+  cursor: pointer;
+}
+
+.accordion__li-text {
+  @include font($size: 2rem, $weight: 700);
+  @include media-mobile {
+    font-size: 1.5rem;
+  }
+  color: #000000;
+}
+.accordion__li-arrow {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url("../img/svg/arr_btn.svg") no-repeat;
+  background-size: 100%;
+  @extend %transition;
+}
+
+.price-tab {
+  position: relative;
+  top: -30px;
+  margin: 0 19% 0 auto;
+  max-width: 65%;
+  padding: 6px 0 12px 0;
+  @extend %font-main;
+  border-top: 0.5px solid #aea1a1;
+  &__text {
+    color: #717171;
+    @include font(1rem, $weight: 300);
+    margin-top: 0;
+    margin-bottom: 6px;
+  }
+  &__coast {
+    margin-bottom: 12px;
+    color: #000000;
+    font-size: 1.2rem;
+    .color-cost {
+      font-weight: 700;
+      color: $color-primary;
+    }
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 86px;
+    height: 25px;
+    @include font(1.4rem, $height: 2rem, $weight: 700);
+    color: $color-text;
+    background-color: $color-light;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+      color: $color-light;
+      background-color: $color-primary;
+    }
+  }
+  .big-num {
+    font-size: 1.5rem;
+  }
+  transition: 0.4s;
+  opacity: 0;
+  height: 0;
+  padding: 0;
+  border-top: none;
+  overflow: hidden;
+}
+
+.accordion__li.open-tab .price-tab {
+  border-top: 0.5px solid #aea1a1;
+  opacity: 1;
+  height: auto;
+  padding: 6px 0 12px 0;
+  overflow: auto;
+  transform: translateY(30px);
+}
+.accordion__li.open-tab {
+  background-color: $color-price-bg;
+}
+
+.accordion__li.open-tab .accordion__li-arrow {
+  background: url("../img/svg/arr_btn_active.svg");
+  transform: rotate(360deg);
+}

@@ -1,0 +1,45 @@
+.card {
+  text-align: center;
+  @extend %transition;
+}
+.card__img-wrapper {
+  width: 329px;
+  height: 350px;
+  @include media-desktop {
+    width: 280px;
+    height: 350px;
+  }
+}
+.card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+.card__subtext {
+  width: 330px;
+  height: 100px;
+  padding: 10px 29px 36px 31px;
+  box-sizing: border-box;
+  border: 1px solid $color-border;
+  border-radius: 0px 0px 20px 20px;
+  @include media-desktop {
+    width: 280px;
+    height: 100px;
+  }
+}
+.card__name {
+  margin: 0 0 13px 0;
+  @include media-desktop {
+    margin-bottom: 8px;
+  }
+}
+.card__text {
+  margin: 0;
+  @include font($size: 1.6rem, $height: 2rem, $weight: 400);
+  color: $color-text;
+}
+
+.card-blur {
+  filter: blur(2px);
+}

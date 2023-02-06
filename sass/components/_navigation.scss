@@ -1,0 +1,28 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 46px;
+  font-family: 'Inika';
+  font-size: 1.6rem;
+  line-height: 5rem;
+  transition: 0.3s linear;
+  @include media-mobile {
+    flex-direction: column;
+    gap: 0px;
+    line-height: 3rem;
+    padding: 0;
+  }
+}
+.navigation__link {
+  list-style: none;
+  & a {
+    text-decoration: none;
+    color: $color-links-nav;
+    &:hover {
+      color: $color-primary;
+      @extend %transition;
+    }
+  }
+}
+

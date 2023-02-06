@@ -1,0 +1,33 @@
+.social-icon {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  @extend %transition;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.instagram {
+  background: url('../img/svg/instagram.svg') no-repeat center;
+  &:hover{
+    background: url('../img/svg/instagram-hovered.svg') no-repeat center;
+  }
+}
+.facebook {
+  background: url('../img/svg/facebook.svg')  no-repeat center;
+  &:hover{
+    background: url('../img/svg/facebook-hovered.svg') no-repeat center;
+  }
+}
+.twitter {
+  background: url('../img/svg/twitter.svg')  no-repeat center;
+  &:hover{
+    background: url('../img/svg/twitter-hovered.svg') no-repeat center;
+  }
+}
+.pinterest {
+  background: url('../img/svg/pinterest.svg')  no-repeat center;
+  &:hover{
+    background: url('../img/svg/pinterest-hovered.svg') no-repeat center;
+  }
+}

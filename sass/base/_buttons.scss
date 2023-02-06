@@ -1,0 +1,64 @@
+.button {
+  padding: 12px 40px;
+  @extend %font-add;
+  @include font($size: 2rem, $height: 2.6rem, $weight: 400);
+  border: 1px solid $color-primary;
+  border-radius: 10px;
+  background: transparent;
+  color: $color-primary;
+  cursor: pointer;
+  @extend %transition;
+  &:hover {
+    background: $color-primary;
+    color: $color-light;
+  }
+  &--welcome {
+    color: #000000;
+    padding: 8px 26px;
+    font-size: 1.6rem;
+    @extend %font-main;
+    border: 2px solid $color-primary;
+    @include media-mobile {
+      @include font($size: 1rem, $height: 2rem, $weight: 400);
+      padding: 6px 17px;
+    }
+  }
+  &--service {
+    height: 50px;
+    width: 161px;
+    border-radius: 5px;
+    @include media-mobile {
+      @include font($size: 1.5rem, $height: 2rem, $weight: 400);
+      height: 35px;
+      width: 121px;
+      padding: 5px 28px;
+    }
+    &:hover {
+      color: $color-primary;
+      background: $color-border;
+    }
+    &.active-btn {
+      background: $color-primary;
+      color: $color-light;
+    }
+    &:disabled {
+      cursor: not-allowed;
+      &:hover {
+        border: 1px solid $color-border;
+        color: $color-border;
+        background-color: transparent;
+      }
+    }
+  }
+  &--prices {
+    padding: 12px 32px;
+    font-weight: 700;
+    border-radius: 5px;
+    @include media-mobile {
+      @include font($size: 1.5rem, $height: 2rem, $weight: 700);
+      height: 35px;
+      width: 121px;
+      padding: 3px 20px;
+    }
+  }
+}
