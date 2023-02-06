@@ -18,19 +18,34 @@
     visibility: hidden;
     opacity: 0;
     position: absolute;
-    top: -300px;
+    top: -600px;
     right: 0;
     background: #ffffffdf;
     padding: 80px 20px 20px 20px;
     width: 100%;
-    height: 300px;
+    height: 600px;
   }
 }
 
-.header.open  .header__navigation {
+.header.open .header__navigation {
   @include media-mobile {
     transform: translateY(100%);
     visibility: visible;
     opacity: 1;
+    .navigation {
+      gap: 50px;
+      margin-top: 50px;
+    }
+    .navigation__link {
+      width: 100%;
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .navigation__link a {
+      font-size: 4rem;
+      display: block;
+      width: 100%;
+    }
   }
 }
