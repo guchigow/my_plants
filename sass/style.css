@@ -316,6 +316,42 @@ section, main, footer, header, article {
   box-sizing: border-box;
 }
 
+/* inika-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/inika-v21-latin-regular.eot"); /* IE9 Compat Modes */
+  src: url("../../fonts/inika-v21-latin-regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/inika-v21-latin-regular.woff2") format("woff2"), url("../../fonts/inika-v21-latin-regular.woff") format("woff"), url("../../fonts/inika-v21-latin-regular.ttf") format("truetype"), url("../../fonts/inika-v21-latin-regular.svg#Inika") format("svg"); /* Legacy iOS */
+}
+/* inika-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../fonts/inika-v21-latin-700.eot"); /* IE9 Compat Modes */
+  src: url("../../fonts/inika-v21-latin-700.eot?#iefix") format("embedded-opentype"), url("../../fonts/inika-v21-latin-700.woff2") format("woff2"), url("../../fonts/inika-v21-latin-700.woff") format("woff"), url("../../fonts/inika-v21-latin-700.ttf") format("truetype"), url("../../fonts/inika-v21-latin-700.svg#Inika") format("svg"); /* Legacy iOS */
+}
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/inter-v12-latin-regular.eot"); /* IE9 Compat Modes */
+  src: url("../../fonts/inter-v12-latin-regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/inter-v12-latin-regular.woff2") format("woff2"), url("../../fonts/inter-v12-latin-regular.woff") format("woff"), url("../../fonts/inter-v12-latin-regular.ttf") format("truetype"), url("../../fonts/inter-v12-latin-regular.svg#Inter") format("svg"); /* Legacy iOS */
+}
+/* inter-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../fonts/inter-v12-latin-700.eot"); /* IE9 Compat Modes */
+  src: url("../../fonts/inter-v12-latin-700.eot?#iefix") format("embedded-opentype"), url("../../fonts/inter-v12-latin-700.woff2") format("woff2"), url("../../fonts/inter-v12-latin-700.woff") format("woff"), url("../../fonts/inter-v12-latin-700.ttf") format("truetype"), url("../../fonts/inter-v12-latin-700.svg#Inter") format("svg"); /* Legacy iOS */
+}
 .call-us, .adress, .select__item, .select-city__icon, .select__head:hover, .accordion__li-arrow, .accordion__li, .accordion, .card, .navigation__link a:hover, .hover-link:hover, .social-icon, .logo-svg:hover .logo-path, .button {
   transition: all 0.3s ease-out;
 }
@@ -448,8 +484,6 @@ h3 {
 }
 .button--service:disabled {
   cursor: not-allowed;
-}
-.button--service:disabled:hover {
   border: 1px solid #E3E1D5;
   color: #E3E1D5;
   background-color: transparent;

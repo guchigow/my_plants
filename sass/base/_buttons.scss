@@ -43,11 +43,9 @@
     }
     &:disabled {
       cursor: not-allowed;
-      &:hover {
-        border: 1px solid $color-border;
-        color: $color-border;
-        background-color: transparent;
-      }
+      border: 1px solid $color-border;
+      color: $color-border;
+      background-color: transparent;
     }
   }
   &--prices {
