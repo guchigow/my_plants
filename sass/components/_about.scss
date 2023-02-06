@@ -35,12 +35,11 @@
   order: 1;
   @include media-desktop {
     text-align: center;
-    margin:0  auto 50px auto;
+    margin: 0 auto 50px auto;
   }
   @include media-mobile {
     margin-bottom: 13px;
   }
-
 }
 
 .about__description {
