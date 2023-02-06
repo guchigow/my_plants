@@ -34,16 +34,9 @@
     opacity: 1;
     .navigation {
       gap: 50px;
-      margin-top: 50px;
-    }
-    .navigation__link {
-      width: 100%;
-      text-align: center;
     }
     .navigation__link a {
       font-size: 2rem;
-      display: block;
-      width: 100%;
     }
   }
 }

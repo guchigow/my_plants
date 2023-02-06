@@ -696,16 +696,9 @@ h3 {
   }
   .header.open .header__navigation .navigation {
     gap: 50px;
-    margin-top: 50px;
-  }
-  .header.open .header__navigation .navigation__link {
-    width: 100%;
-    text-align: center;
   }
   .header.open .header__navigation .navigation__link a {
     font-size: 2rem;
-    display: block;
-    width: 100%;
   }
 }
 
